@@ -259,6 +259,13 @@
         },
         "required": false,
         "description": "Object that holds the loading state object coming from dash-renderer"
+      },
+      "header_id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Optional identifier for item header."
       }
     }
   },

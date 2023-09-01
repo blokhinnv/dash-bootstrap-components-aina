@@ -13,7 +13,7 @@ accordion = html.Div(
                     dbc.Button("Click here"),
                 ],
                 title="Item 1",
-                id="item123123"
+                header_id="item1id"
             ),
             dbc.AccordionItem(
                 [
@@ -25,6 +25,7 @@ accordion = html.Div(
             dbc.AccordionItem(
                 "This is the content of the third section",
                 title="Item 3",
+                header_id="item1i234d"
             ),
         ],
     )

@@ -24,6 +24,9 @@ Keyword arguments:
 - class_name (string; optional):
     Often used with CSS to style elements with common properties.
 
+- header_id (string; optional):
+    Optional identifier for item header.
+
 - item_id (string; optional):
     Optional identifier for item used for determining which item is
     visible  if not specified, and AccordionItem is being used inside
@@ -56,10 +59,10 @@ Keyword arguments:
     _namespace = 'dash_bootstrap_components'
     _type = 'AccordionItem'
     @_explicitize_args
-    def __init__(self, children=None, id=Component.UNDEFINED, style=Component.UNDEFINED, class_name=Component.UNDEFINED, className=Component.UNDEFINED, title=Component.UNDEFINED, item_id=Component.UNDEFINED, loading_state=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'id', 'className', 'class_name', 'item_id', 'loading_state', 'style', 'title']
+    def __init__(self, children=None, id=Component.UNDEFINED, style=Component.UNDEFINED, class_name=Component.UNDEFINED, className=Component.UNDEFINED, title=Component.UNDEFINED, item_id=Component.UNDEFINED, loading_state=Component.UNDEFINED, header_id=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'className', 'class_name', 'header_id', 'item_id', 'loading_state', 'style', 'title']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'id', 'className', 'class_name', 'item_id', 'loading_state', 'style', 'title']
+        self.available_properties = ['children', 'id', 'className', 'class_name', 'header_id', 'item_id', 'loading_state', 'style', 'title']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

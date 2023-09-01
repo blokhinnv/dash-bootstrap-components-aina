@@ -67,7 +67,12 @@ AccordionItem.propTypes = {
      * Holds the name of the component that is loading
      */
     component_name: PropTypes.string
-  })
+  }), 
+
+  /**
+   * Optional identifier for item header.
+   */
+  header_id: PropTypes.string,
 };
 
 export default AccordionItem;
