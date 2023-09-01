@@ -68,7 +68,7 @@ const Accordion = props => {
         loading_state,
         class_name,
         className,
-        id,
+        header_id,
         ...otherProps
       } = childProps;
       const itemID = item_id || 'item-' + idx;
@@ -93,6 +93,7 @@ const Accordion = props => {
             // .dbcd-main h2 has margins defined on it - we need to make
             // sure to overwrite them
             style={{marginTop: '0rem', marginBottom: '0rem'}}
+            id={header_id}
           >
             {title}
           </RBAccordion.Header>

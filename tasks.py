@@ -241,7 +241,7 @@ def move_generated_files(_):
 
         if filename == "_imports_.py":
             filename = "__init__.py"
-
+        (file_.parent / "_components" / filename).unlink(missing_ok=True)
         file_.rename(file_.parent / "_components" / filename)
 
 
